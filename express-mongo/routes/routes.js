@@ -9,9 +9,10 @@ mdb.once('open', function (callback) {
 });
 
 var personSchema = mongoose.Schema({
-  name: String,
+  username: String,
+  password: String,
   age: String,
-  favColor: String,
+  email: String,
   species: String
 });
 
@@ -38,14 +39,15 @@ exports.create = function (req, res) {
 
 exports.createPerson = function (req, res) {
   var person = new Person({
-    name: req.body.name,
+    username: req.body.username,
+    password: req.body.password,
     age: req.body.age,
-    favColor: req.body.favColor,
+    email: req.body.email,
     species: req.body.species
   });
   person.save(function (err, person) {
     if (err) return console.error(err);
-    console.log(req.body.name + ' added');
+    console.log(req.body.username + ' added');
   });
   res.redirect('/');
 };
@@ -63,9 +65,10 @@ exports.edit = function (req, res) {
 exports.editPerson = function (req, res) {
   Person.findById(req.params.id, function (err, person) {
     if (err) return console.error(err);
-    person.name = req.body.name;
+    person.username = req.body.username;
+    person.password = req.body.password;
     person.age = req.body.age;
-    person.favColor = req.body.favColor;
+    person.email = req.body.email;
     person.species = req.body.species;
     person.save(function (err, person) {
       if (err) return console.error(err);

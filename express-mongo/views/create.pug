@@ -2,15 +2,18 @@ extends layout
 
 block content
   form(id='form', method='post', action='/create')
-    label(for='name') Name: 
-    input(type='text', name='name')
+    label(for='username') UserName: 
+    input(type='text', name='username')
+    br
+    label(for='Password') password:
+    input(type='text', name='password')
     br
     label(for='age') Age: 
     input(type='text', name='age')
     br
-    label(for='favColor') Favorite Color: 
-    input(type='text', name='favColor')
-    br
+    label(for='email') email:
+    input(type='text', name='email')
+    br    
     label(for='species') Species: 
     select(name='species')
       option(value="Human") Human
