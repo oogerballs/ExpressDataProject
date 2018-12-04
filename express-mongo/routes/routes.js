@@ -13,13 +13,10 @@ var personSchema = mongoose.Schema({
   password: String,
   age: String,
   email: String,
-  species: String
+  animal: String
 });
 
-
 var Person = mongoose.model('People_Collection', personSchema);
-
-
 
 exports.index = function (req, res) {
   Person.find(function (err, person) {
@@ -43,7 +40,7 @@ exports.createPerson = function (req, res) {
     password: req.body.password,
     age: req.body.age,
     email: req.body.email,
-    species: req.body.species
+    animal: req.body.Animal
   });
   person.save(function (err, person) {
     if (err) return console.error(err);
@@ -69,10 +66,10 @@ exports.editPerson = function (req, res) {
     person.password = req.body.password;
     person.age = req.body.age;
     person.email = req.body.email;
-    person.species = req.body.species;
+    person.animal = req.body.animal;
     person.save(function (err, person) {
       if (err) return console.error(err);
-      console.log(req.body.name + ' updated');
+      console.log(req.body.username + ' updated');
     });
   });
   res.redirect('/');
@@ -90,7 +87,7 @@ exports.details = function (req, res) {
   Person.findById(req.params.id, function (err, person) {
     if (err) return console.error(err);
     res.render('details', {
-      title: person.name + "'s Details",
+      title: person.username + "'s Details",
       person: person
     });
   });

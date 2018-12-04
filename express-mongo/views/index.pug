@@ -8,7 +8,7 @@ block content
       th password
       th Age
       th email
-      th Species
+      th Animals
       th 
       th 
     each item in people
@@ -19,7 +19,7 @@ block content
         td #{item.password}
         td #{item.age}
         td #{item.email}
-        td #{item.species}
+        td #{item.animal}
         td
           a(href='/edit/' + item.id) Edit
         td
