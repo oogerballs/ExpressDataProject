@@ -1,0 +1,79 @@
+html {
+  background-color: #2C2C30;
+}
+body {
+
+}
+
+#LoginPage{
+  color: #EFEFF1;
+  font-family: verdana, arial, sans-serif;
+  font-size: 12px;
+  margin-left: 32%;
+  margin-top: 8%;
+  width: 40%;
+  height: 350px;
+  background-color: #1E4873;
+}
+
+#logForm{
+  color: #EFEFF1;
+  font-size: 18px;
+  margin-left: 20%;
+  padding-top: 30px;
+}
+
+#title{
+  font-size: 25px;
+  margin-left: 20%;
+  margin-bottom: 3%; 
+}
+
+#logUsername{
+  margin-left: 3%;
+}
+
+#logPassword{
+ margin-left: 6%;
+}
+
+.loginFields{
+border: #1E4873 2px solid;
+background: #1E4873;
+margin-bottom: 0%; 
+width: 80%;
+}
+
+#loginSubmit{
+  width: 80px;
+  height: 30px;
+  margin-left: 1%;
+}
+
+#registerLink{
+  color: aliceblue;
+}
+
+
+table.gridtable {
+  color: #337;
+  border-width: 1px;
+  border-color: #559;
+  border-collapse: collapse;
+}
+
+table.gridtable th {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #559;
+  background-color: #ccf;
+}
+
+table.gridtable td {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #559;
+  background-color: #fff;
+}
