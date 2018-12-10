@@ -1,0 +1,5 @@
+var date = new Date();
+
+res.cookie('currentDate', date);
+
+//Put code on function whe the page opens
