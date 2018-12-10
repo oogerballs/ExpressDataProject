@@ -16,10 +16,20 @@ block content
     br
     label(for='animal') Animals:
     select(name='animal')
-      option(selected = person.animal) #{person.animal}
       option(value="Dog") Dog
       option(value="Cat") Cat
+      option(value="Bird") Bird
       option(value="Other") Other
-      option(value="None") None
     br
+    label(for='color') Favorite Color:
+    select(name='color')
+      option(value="Red") Red
+      option(value="Blue") Blue
+      option(value="Green") Green
+      option(value="Other") Other
+    br
+    label(for='aliens') Do aliens exist?:
+    select(name='aliens')
+      option(value="True") True
+      option(value="False") False
     input(type='submit', value='Update Person')

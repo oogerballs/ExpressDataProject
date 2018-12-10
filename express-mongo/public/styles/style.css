@@ -1,18 +1,79 @@
 html {
-  background-color: #227;
+  background-color: rgb(143, 143, 224);
 }
 body {
   font-family: verdana, arial, sans-serif;
-  font-size: 12px;
-  width: 80%;
+  font-size: 16px;
+  min-width: 80%;
   padding: 20px;
-  background-color: #eeb;
+  background-color: rgb(85, 96, 148);
+}
+.divy{
+  padding-left: 0px;
+  width: 500px;
+  color: white;
+  background-color: rgb(31, 76, 199);
+}
+
+.uhgl{
+  width: 50px;
+  margin: auto;
+  padding:20px;
+  display: inline-block;
+}
+
+#heffers{
+  font-size: 16;
+}
+
+a{
+  color: rgb(72, 206, 247);
+  text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+  color: rgb(72, 206, 247);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(72, 206, 247);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(172, 218, 231);
+}
+
+/* selected link */
+a:active {
+  color: rgb(191, 239, 253);
+}
+
+#canvasBoard{
+  display: inline-block;
+
+}
+.butts{
+  padding: 10px;
+  width: 150px;
+  height: 70px;
+  color: black;
+  background-color: rgb(69, 177, 204);
+}
+
+.headers{
+  color: black;
+  font-size: 20px;
+  width: 250px;
+  font-style: oblique;
 }
 
 table.gridtable {
   color: #337;
   border-width: 1px;
-  border-color: #559;
+  border-color: rgb(170, 170, 204);
   border-collapse: collapse;
 }
 
@@ -20,7 +81,7 @@ table.gridtable th {
   border-width: 1px;
   padding: 8px;
   border-style: solid;
-  border-color: #559;
+  border-color: rgb(175, 175, 228);
   background-color: #ccf;
 }
 
@@ -28,6 +89,10 @@ table.gridtable td {
   border-width: 1px;
   padding: 8px;
   border-style: solid;
-  border-color: #559;
-  background-color: #fff;
+  border-color: rgb(173, 173, 224);
+  background-color: rgb(153, 151, 238);
+}
+
+.can {
+  background: rgb(158, 158, 206);
 }

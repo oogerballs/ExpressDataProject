@@ -1,1 +1,1 @@
-"C:\Program Files\MongoDB\Server\4.0\bin\mongod" --dbpath "C:\Users\Cristain\Desktop\Quarter 5\Interactive Web Development\Web_Dev_WorkSpace\NODE\express-mongo\data"
+"C:\Program Files\MongoDB\Server\4.0\bin\mongod" --dbpath "C:\Users\Admin\Documents\bla\ExpressDataProject\express-mongo\data"

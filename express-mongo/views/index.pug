@@ -1,25 +1,57 @@
 extends layout
 
 block content
+  script.
+    var data = [#{data}]
+  div(id="canvasBoard")
+    a(href='/login' class="butts") Log In
+    a(href='/create' class="butts") Register
+    ul
+      li
+        p(class="headers") Previous Animals: 
+        div(class="divy" width="400")
+          p(class="uhgl") Dog
+          p(class="uhgl") Cat
+          p(class="uhgl") Bird
+          p(class="uhgl") Other
+        canvas(id="animalCanvas" class="can" width="500" height="200")
+      br
+      li
+        p(class="headers") Favorite Color: 
+        div(class="divy" width="400")
+          p(class="uhgl") Blue
+          p(class="uhgl") Red
+          p(class="uhgl") Green
+          p(class="uhgl") Other
+        canvas(id="colorCanvas" class="can" width="500" height="200")
+      br
+      li
+        p(class="headers") Believes in Aliens: 
+        div(class="divy" width="400")
+          p(class="uhgl") True
+          p(class="uhgl") False
+        canvas(id="alienCanvas" class="can" width="500" height="200")
   table(class='gridtable')
     tr
       th Id
       th Username
-      th password
       th Age
-      th email
+      th Email
       th Animals
+      th Color
+      th Aliens
       th 
       th 
     each item in people
       tr
         td
-          a(href='/details/' + item.id) #{item.id}
+          a(href='/details/'+item.id id="heffers") #{item.id}
         td #{item.username}
-        td #{item.password}
         td #{item.age}
         td #{item.email}
         td #{item.animal}
+        td #{item.color}
+        td #{item.aliens}
         td
           a(href='/edit/' + item.id) Edit
         td
@@ -27,4 +59,4 @@ block content
 
   p
   #menu
-    a(href='/create') Register
+  script(src="script.js")

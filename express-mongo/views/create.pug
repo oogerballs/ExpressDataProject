@@ -5,7 +5,7 @@ block content
     label(for='username') UserName: 
     input(type='text', name='username')
     br
-    label(for='Password') password:
+    label(for='password') password:
     input(type='text', name='password')
     br
     label(for='age') Age: 
@@ -19,6 +19,18 @@ block content
       option(value="Dog") Dog
       option(value="Cat") Cat
       option(value="Other") Other
-      option(value="None") None
+      option(value="Bird") Bird
+    br
+    label(for='color') Favorite Color: 
+    select(name='color')
+      option(value="Red") Red
+      option(value="Blue") Blue
+      option(value="Green") Green
+      option(value="Other") Other
+    br
+    label(for='aliens') Aliens are Real: 
+    select(name='aliens')
+      option(value="True") True
+      option(value="False") False
     br
     input(type='submit', value='Register')
