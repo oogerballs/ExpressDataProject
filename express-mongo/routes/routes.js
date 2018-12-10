@@ -92,3 +92,20 @@ exports.details = function (req, res) {
     });
   });
 };
+
+exports.loginPerson = function (req, res) {
+  Person.findOne({username: req.body.username , password: req.body.password}, function (err, person) {
+      if(person == null || person == undefined){
+      req.body.response = "Username or Password is incorrect"
+      }else{
+        var personID = person.id;
+        res.redirect('/details/'+personID);
+      }
+  });
+};
+
+exports.login = function (req, res) {
+  res.render('login', {
+      title: 'Login Page'
+  });
+};

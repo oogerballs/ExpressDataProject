@@ -1,0 +1,26 @@
+doctype
+html
+  head
+    title=title
+    link(href='/styles/style.css', rel='stylesheet')
+  body
+
+    block content
+        div(id="LoginPage")
+            div(id="logForm")
+                h3(id="title")=title
+                form(id="LoginForm", method='post', action='/login')
+                    div(class="loginFields")
+                        label(for='username') UserName: 
+                        input(type='text', name='username' id="logUsername")
+                    br
+                    div(class="loginFields")
+                        label(for='Password') password:
+                        input(type='text', name='password',id="logPassword")
+                    br
+                    input(type="submit", value="Log In" id="loginSubmit")
+                p(id='response')
+
+                p
+                #menu
+                a(href='/create' id="registerLink") Register      
